@@ -35,6 +35,7 @@ nav a {
     display: inline-block; /* Display inline block */
   position: relative;
   animation: go-left 1s;
+  transition: 0.5s;
 }
 nav a:after {
  /* Set position relative */
