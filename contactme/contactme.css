@@ -4,6 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+body {
+	background-color:black;
+}
 .heading {
     font-size: 75px;
     margin-top: 0;
