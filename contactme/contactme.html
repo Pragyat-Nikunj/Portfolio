@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jersey+25+Charted&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="contactme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1 class="heading">Contact Me</h1>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../aboutme/aboutme.html">About Me</a>
+        <a href="../myskills/myskills.html">My Skills</a>
+    </nav>
+    <div class="container">
+        <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST"></form>
+        <video autoplay loop muted plays-inline class="background-clip" id="myVideo" height="720">
+            <source src="earth1.mp4" type="video/mp4">
+        </video>
+        <div class="forms">
+        <label for="name">Your Name </label> <input type="text" id = "name" name = "name" placeholder="Write Your Name">
+        <label for="email">Your Email </label> <input type="text" id = "email" name = "email" placeholder="Write Your Email">
+        <label for="comments">Write Your Message</label>
+		<textarea name="comments" placeholder="Write"></textarea>
+        <button type="submit">Hire Me</button>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:khaki;" >Follow Me On
+           <a href="https://www.instagram.com/pragyatnikunj/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a> 
+            <a href="https://twitter.com/pragyatnikunj" target="_blank"><i class="fa-brands fa-twitter twitter"></i></a>
+            <a href="https://github.com/Pragyat-Nikunj" target="_blank"><i class="fa-brands fa-github github"></i></a>
+            <a href="https://www.linkedin.com/in/pragyat-nikunj-399a95290/" target="_blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61556893642181" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
+        </p>
+    </div>
+    </div>
+    <script src="contactme.js"></script>
+</body>
+</html>

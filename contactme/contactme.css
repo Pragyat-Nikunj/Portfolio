@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.heading {
+    font-size: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color:black;
+    font-family: 'Bungee Spice';
+    animation: go-down 1s;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    font-size: 23px;
+    padding-top: 10px;
+    background-color: blanchedalmond;
+}
+nav a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+nav a {
+    margin-right: 16px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:blueviolet;
+    font-family:cursive;
+    display: inline-block; /* Display inline block */
+  position: relative;
+  animation: go-left 1s;
+  transition: 0.5s;
+}
+nav a:after {
+ /* Set position relative */
+ content: ''; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 70%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 3px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: aqua; /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out;
+}
+nav a:hover:after {
+    transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left;
+}
+@keyframes  fade-down {
+    0%  {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }    
+}
+@keyframes go-left {
+    0% {
+        opacity: 0;
+        transform: translateX(200px) scale(0.2);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes go-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px) scale(0.2);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes go-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px) scale(0.2);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes go-down {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes random {
+    0% {
+        opacity: 0.2 ;transform: translateX(-200px) translateY(-440px) scale(0.1);
+    }
+    
+    100% {
+       opacity: 1; transform: translateX(0px) translateY(0px) scale(1);
+    }
+}
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-height: 100vh;
+}
+.forms label {
+    color: gold;
+    font-size: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+    animation: go-right 1s;
+}
+input,textarea {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+    background-color: skyblue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border: none;
+    animation: go-left 1s;
+}
+textarea {
+    height: 10rem;
+}
+button {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 10px;
+    color: brown;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+    animation: go-up 1s;
+}
+button:hover {
+    background-color: #BAFF39;
+    transform: translateY(-10px);
+}
+p {
+    font-size: 1rem;
+    color: #FFCC00;
+}
+.instagram {
+    font-size: 2rem;
+    transition: 0.3s;
+    padding:0 5px;
+    background: #f09433; 
+    color: white;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.twitter {
+    font-size: 2rem;
+    padding:0 10px;
+    color: deepskyblue;
+    transition: 0.3s;
+}
+.linkedin {
+    font-size: 2rem;
+    padding:0 10px;
+    color: #0077B5;
+    transition: 0.3s;
+}
+.github {
+    font-size: 2rem;
+    padding:0 10px;
+    color: gold;
+    transition: 0.3s;
+}
+.facebook {
+    font-size: 2rem;
+    padding:0 10px;
+    color: #1877f2;
+    transition: 0.3s;
+}
+p a i:hover {
+    transform: translateY(-20px)   scale(1.5);
+}
+p  {
+    animation: random 1s;
+}

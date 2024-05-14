@@ -1,0 +1,69 @@
+body {
+    background-color:darkgrey;
+}
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    background-color:bisque;
+    text-align: center;
+    text-decoration: underline;
+    color:coral;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+blockquote {
+    color:aliceblue;
+    background: lightblue url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinlGy2Vf-OruFGWVOZPlZ3YC_IhNXhsf-44RMU4brhw&s) left;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+.buddy {
+    color: gold;
+    background-color: brown;
+}
+ol {
+    color:darkgreen;
+}
+q,em {
+    color: sienna;
+}
+a:link {
+    color:slateblue;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+a:visited {
+    color:blue ;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+a:hover {
+    color: aquamarine;
+    font-weight: bold;
+    font-style: unset;
+    background-color: black;
+    text-decoration: none;
+}
+.floatleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 2rem;
+    border: 3px dashed red;
+}
+.floatright {
+    float: right;
+    margin: 0 0 1rem 2rem;
+    border-radius: 2rem;
+    border: 3px dashed red;
+}
+div a {
+    background-color:skyblue;
+    text-decoration:none;
+    font-weight: bold;
+    color:white;
+    display:block;
+    width:10rem;
+  }
